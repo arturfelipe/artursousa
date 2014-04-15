@@ -1,0 +1,19 @@
+{
+  "name": "artursousa",
+  "version": "0.0.0",
+  "homepage": "http://artursousa.com.br",
+  "authors": [
+    "arturfelipe <arturfelipe.sousa@gmail.com>"
+  ],
+  "description": "Artur's website",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/js/vendor",
+    "test",
+    "tests"
+  ]
+}
