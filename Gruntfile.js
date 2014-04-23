@@ -25,6 +25,8 @@ module.exports = function (grunt) {
         }
     });
 
+    grunt.registerTask('serve', ['connect']);
+
     grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-less');
 };

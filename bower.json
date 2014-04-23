@@ -12,8 +12,10 @@
     "**/.*",
     "node_modules",
     "bower_components",
-    "app/js/vendor",
+    "js/vendor",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+  }
 }
