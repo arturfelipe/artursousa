@@ -1,32 +1,28 @@
-'use strict';
 
 module.exports = function (grunt) {
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
+
         connect: {
             server: {
-                options: {
-                    port: 9001,
-                    base: '.',
-                    keepalive: true
-                }
+              options: {
+                port: 9001
+              }
             }
         },
-        less: {
-            development: {
-                options: {
-                    compress: true,
-                },
-                files: {
-                    'assets/css/main.css':'app/css/main.less'
-                }
-            }
+
+        watch: {
+            options: {
+                livereload: true
+            },
+            files: ['*.html']
         }
+
     });
 
-    grunt.registerTask('serve', ['connect']);
-
+    grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-connect');
-    grunt.loadNpmTasks('grunt-contrib-less');
+
+    grunt.registerTask('serve', ['connect', 'watch']);
 };
