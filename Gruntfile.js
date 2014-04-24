@@ -6,23 +6,39 @@ module.exports = function (grunt) {
 
         connect: {
             server: {
-              options: {
-                port: 9001
-              }
+                options: {
+                    port: 9001
+                }
             }
         },
 
         watch: {
-            options: {
-                livereload: true
+            livereload: {
+                options: {
+                    livereload: true
+                },
+                files: ['*.html', 'css/*.css', 'js/*.js']
             },
-            files: ['*.html']
+            css: {
+                files: ['sass/*.scss'],
+                tasks: ['compass']
+            }
+        },
+
+        compass: {
+            dist: {
+                options: {
+                    sassDir: 'sass',
+                    cssDir: 'css'
+                }
+            }
         }
 
     });
 
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-contrib-compass');
 
     grunt.registerTask('serve', ['connect', 'watch']);
 };
