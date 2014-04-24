@@ -1,4 +1,61 @@
-/* line 3, ../sass/main.scss */
-html, body {
-  color: red;
+@import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates|Questrial);
+@import url(http://fonts.googleapis.com/css?family=Questrial);
+/* line 13, ../sass/main.scss */
+body {
+  font-family: "Questrial", "sans-serif";
+  font-size: 18px;
+}
+
+/* line 18, ../sass/main.scss */
+a {
+  color: #6c93bc;
+}
+/* line 21, ../sass/main.scss */
+a:hover {
+  color: #456d97;
+}
+
+/* line 26, ../sass/main.scss */
+h2 {
+  color: #456d97;
+}
+
+/* line 30, ../sass/main.scss */
+.as-top {
+  background-color: #1c2e3f;
+}
+/* line 33, ../sass/main.scss */
+.as-top .as-brand {
+  float: left;
+  font-family: "Montserrat Alternates", "sans-serif";
+  font-size: 30px;
+  color: white;
+  margin: 4px 15px;
+  text-shadow: 1px 1px 2px #333;
+}
+/* line 41, ../sass/main.scss */
+.as-top .as-brand:hover {
+  text-decoration: none;
+}
+/* line 46, ../sass/main.scss */
+.as-top .as-navbar-collapse a {
+  color: #ddd;
+  font-size: 16px;
+}
+/* line 51, ../sass/main.scss */
+.as-top .as-navbar-collapse a:hover {
+  color: white;
+  background-color: #446d97;
+}
+/* line 56, ../sass/main.scss */
+.as-top .as-icon-bar {
+  background-color: #ddd;
+}
+
+/* line 64, ../sass/main.scss */
+.as-main-content .as-main-title {
+  font-size: 35px;
+  text-align: center;
+  max-width: 750px;
+  margin: 40px auto;
 }

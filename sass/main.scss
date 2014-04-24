@@ -1,5 +1,71 @@
 @import "compass/css3";
 
-html, body {
-    color: red;
+@import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates|Questrial);
+@import url(http://fonts.googleapis.com/css?family=Questrial);
+
+$brand-font: 'Montserrat Alternates', 'sans-serif';
+$main-font: 'Questrial', 'sans-serif';
+$header-color: #1c2e3f;
+$brand-color: white;
+$link-color: #6c93bc;
+$link-color-hover: #456d97;
+
+body {
+    font-family: $main-font;
+    font-size: 18px;
+}
+
+a {
+    color: $link-color;
+
+    &:hover {
+        color: $link-color-hover;
+    }
+}
+
+h2 {
+    color: $link-color-hover;
+}
+
+.as-top {
+    background-color: $header-color;
+
+    .as-brand {
+        float: left;
+        font-family: $brand-font;
+        font-size: 30px;
+        color: $brand-color;
+        margin: 4px 15px;
+        text-shadow: 1px 1px 2px #333;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .as-navbar-collapse a {
+        color: #ddd;
+        font-size: 16px;
+    }
+
+    .as-navbar-collapse a:hover {
+        color: white;
+        background-color: #446d97;
+    }
+
+    .as-icon-bar {
+        background-color:  #ddd;
+    }
+}
+
+.as-main-content {
+
+
+    .as-main-title {
+        font-size: 35px;
+        text-align: center;
+        max-width: 750px;
+        margin: 40px auto;
+    }
+
 }
