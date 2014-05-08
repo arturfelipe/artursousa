@@ -1,0 +1,12 @@
+/* TEAM */
+    Developer: Artur Felipe de Sousa
+    Twitter: @arturfsousa
+    Github: arturfelipe
+    From: Brazil
+
+/* SITE */
+    Last update: 2014/05/08
+    Language: Portuguese (BR)
+    Doctype: HTML5
+    IDE: Sublime Text, Photoshop
+    TECH: jQuery, Grunt, Bower, Bootstrap
